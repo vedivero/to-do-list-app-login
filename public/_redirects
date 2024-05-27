@@ -1,0 +1,1 @@
+/api/* http://mydailytasks-env.eba-wfxm7kpq.ap-southeast-2.elasticbeanstalk.com/api/:splat 200
