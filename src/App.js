@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
 import TodoPage from "./pages/TodoPage";
 import RegisterPage from "./pages/RegisterPage";
@@ -35,7 +35,6 @@ function App() {
       <Route path="/" element={<PrivateRoute user={user}>
                                   <TodoPage/>
                               </PrivateRoute>} />
-      {/* <Route path="/" element=<TodoPage/> /> */}
       <Route path="/register" element={<RegisterPage />} />
       <Route path="/login" element={<LoginPage user={user} setUser={setUser} />} />
     </Routes>
